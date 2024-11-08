@@ -17,7 +17,7 @@ html, body {
 }
 
 body {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-color);
@@ -28,27 +28,37 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    width: 100%;
+    max-width: 560px;
     text-align: left;
     padding: 20px;
+    margin: 0 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 24px;
+    height: 24px;
     background-color: var(--main-color);
     border-radius: 50%;
-    margin-bottom: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
+    flex-shrink: 0;
 }
 
 h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: clamp(20px, 4vw, 24px);
+    margin: 0;
 }
 
 p {
+    font-size: clamp(14px, 3vw, 16px);
     margin-bottom: 15px;
 }
 
@@ -66,12 +76,29 @@ a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 0 10px;
+    }
+    
+    .header {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
     .container {
         padding: 10px;
+        margin: 0 5px;
     }
-
-    h1 {
-        font-size: 20px;
+    
+    .logo {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .header {
+        margin-bottom: 15px;
     }
 }
