@@ -3,22 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi, I'm Ufuk.</title>
+    <title>Ufuayk</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico">
 </head>
-<body> 
+<body>
+    <div class="background-animation">
+        <div class="floating-dot" style="left: 10%; top: 20%; animation-delay: 0s;"></div>
+        <div class="floating-dot" style="left: 20%; top: 80%; animation-delay: -2s;"></div>
+        <div class="floating-dot" style="left: 80%; top: 15%; animation-delay: -4s;"></div>
+        <div class="floating-dot" style="left: 70%; top: 70%; animation-delay: -6s;"></div>
+        <div class="floating-dot" style="left: 30%; top: 40%; animation-delay: -8s;"></div>
+    </div>
     <div class="container">
         <div class="header">
-            <h1>Hi, I'm <em>Ufuk</em>.</h1>
-            <div class="logo" id="lightModeToggle"></div>
+            <h1 class="animate-text">Hi, I'm <a class="glowing-skill"><em>Ufuk</em></a>.</h1>
+            <div class="logo" id="lightModeToggle"> 
+                <div class="logo-shine"></div>
+            </div>
         </div>
-        <p>I'm currently working on small <strong>Python</strong> and <strong>JavaScript</strong> projects.</p>
-        <p>I also have a strong interest in <strong>Photoshop</strong>, <strong>Arduino</strong> and <strong>Linux Shell</strong>.</p>
-        <p>I'm skilled in <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong>, <strong>Node.js</strong>, <strong>React</strong>, <strong>Vue</strong> and <strong>Supabase</strong>.</p>
-        <p>Click <strong><a href="https://ufuk.bearblog.dev" target="_blank">here</a></strong> to see my Turkish <strong>technology/programming</strong> blog.</p>
-        <p>Click <strong><a href="https://github.com/ufuayk" target="_blank">here</a></strong> to see my <strong>GitHub</strong> profile.</p>       
+        <p class="animate-text">I'm currently working on small <strong><a class="glowing-skill">Python</a></strong> and <strong><a class="glowing-skill">JavaScript</a></strong> projects.</p>
+        <p class="animate-text">I also have a strong interest in <strong><a class="glowing-skill">Photoshop</a></strong>, <strong><a class="glowing-skill">Arduino</a></strong> and <strong><a class="glowing-skill">Linux Shell</a></strong>.</p>
+        <p class="animate-text">I'm skilled in <strong><a class="glowing-skill">HTML</a></strong>, <strong><a class="glowing-skill">CSS</a></strong>, <strong><a class="glowing-skill">Bootstrap</a></strong>, <strong><a class="glowing-skill">Node.js</a></strong>, <strong><a class="glowing-skill">React</a></strong>, <strong><a class="glowing-skill">Vue</a></strong> and <strong><a class="glowing-skill">Supabase</a></strong>.</p>
+        <div class="social-icons">
+            <a href="https://github.com/ufuayk" target="_blank" class="social-icon">
+                <i class="glowing-skill"><i class="fab fa-github"></i></i>
+            </a>
+            <a href="https://layers.to/ufuk" target="_blank" class="social-icon">
+                <i class="glowing-skill"><i class="fa-solid fa-layer-group"></i></i>
+            </a>
+            <a href="https://ufuk.bearblog.dev/" target="_blank" class="social-icon">
+                <i class="glowing-skill"><i class="fab fa-blogger-b"></i></i>
+            </a>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
